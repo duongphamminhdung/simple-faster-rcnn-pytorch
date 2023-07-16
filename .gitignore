@@ -1,0 +1,11 @@
+VOCdevkit
+*.pyc
+
+
+*.pt
+*.pth
+
+*.png
+*.jpg
+*.xml
+*.tar
