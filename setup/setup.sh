@@ -12,4 +12,4 @@ tar xvf VOCtest_06-Nov-2007.tar
 tar xvf VOCdevkit_08-Jun-2007.tar
 
 conda init
-setupconda
+sh setupconda.sh
