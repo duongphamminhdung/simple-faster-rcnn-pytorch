@@ -7,7 +7,7 @@ from pprint import pprint
 
 class Config:
     # data
-    voc_data_dir = '/root/VOCdevkit/VOC2007'
+    voc_data_dir = '/root/simple-faster-rcnn-pytorch/setup/VOCdevkit/VOC2007'
     min_size = 600  # image resize
     max_size = 1000 # image resize
     num_workers = 8
