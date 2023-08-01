@@ -23,3 +23,4 @@ tar xvf VOCdevkit_08-Jun-2007.tar
 echo init conda
 conda init
 
+tmux

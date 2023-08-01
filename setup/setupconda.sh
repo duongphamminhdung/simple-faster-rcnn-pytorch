@@ -4,7 +4,7 @@ echo creating environment
 conda create --name simp python=3.7
 
 echo activate environment "simp"
-conda activate simp
+source activate simp
 
 # install pytorch
 echo installing pytorch
