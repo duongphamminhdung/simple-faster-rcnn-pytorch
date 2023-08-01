@@ -1,11 +1,3 @@
-
-# create conda env
-echo conda create --name simp python=3.7
-conda create --name simp python=3.7
-
-echo bash activate simp
-bash activate simp
-
 # install pytorch
 echo conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.2 -c pytorch
 conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.2 -c pytorch

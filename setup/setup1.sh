@@ -23,4 +23,7 @@ tar xvf VOCdevkit_08-Jun-2007.tar
 echo init conda
 conda init
 
+echo conda create --name simp python=3.7
+conda create --name simp python=3.7
+
 tmux
