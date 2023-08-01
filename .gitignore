@@ -13,3 +13,4 @@ VOCdevkit
 setup/VOCtrainval_06-Nov-2007.tar.1
 setup/nohup.out
 setup/condacolab_install.log
+setup/.setup.sh.swp

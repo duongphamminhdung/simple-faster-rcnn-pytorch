@@ -1,3 +1,6 @@
+echo config git
+git config --global user.email "duongphamminhdung@gmail.com"
+git config --global user.name "duongphamminhdung"
 
 echo installing condacolab
 pip install -q condacolab
