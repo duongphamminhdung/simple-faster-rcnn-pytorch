@@ -1,19 +1,19 @@
 
 # create conda env
-echo creating environment
+echo conda create --name simp python=3.7
 conda create --name simp python=3.7
 
-echo activate environment "simp"
-source activate simp
+echo bash activate simp
+bash activate simp
 
 # install pytorch
-echo installing pytorch
+echo conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.2 -c pytorch
 conda install pytorch==1.5.1 torchvision==0.6.1 cudatoolkit=10.2 -c pytorch
 
 # install other dependancy
-echo installing other dependacy
+echo pip install visdom scikit-image tqdm fire ipdb matplotlib torchnet
 pip install visdom scikit-image tqdm fire ipdb matplotlib torchnet
 
 # start visdom
-echo startvisdomy
+echo nohup python -m visdom.server &
 nohup python -m visdom.server &
