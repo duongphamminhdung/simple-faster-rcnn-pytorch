@@ -81,6 +81,8 @@ class VOCBboxDataset:
         self.use_difficult = use_difficult
         self.return_difficult = return_difficult
         self.label_names = VOC_BBOX_LABEL_NAMES
+        # print(id_list_file)
+        # print(self.ids)
 
     def __len__(self):
         return len(self.ids)
@@ -135,23 +137,5 @@ class VOCBboxDataset:
 
 
 VOC_BBOX_LABEL_NAMES = (
-    'aeroplane',
-    'bicycle',
-    'bird',
-    'boat',
-    'bottle',
-    'bus',
-    'car',
-    'cat',
-    'chair',
-    'cow',
-    'diningtable',
-    'dog',
-    'horse',
-    'motorbike',
-    'person',
-    'pottedplant',
-    'sheep',
-    'sofa',
-    'train',
-    'tvmonitor')
+    'coconut'
+)
