@@ -8,7 +8,7 @@ echo installing data
 # tar xvf VOCtest_06-Nov-2007.tar
 # tar xvf VOCdevkit_08-Jun-2007.tar
 pip install gdown
-gdown https://drive.google.com/uc?id=1xtpLsvMBfaw2pj8s4m5lf05i4aB0jmwj
+gdown https://drive.google.com/uc?id=15IKfgjVQMU1Fllryv2f0KKi9qa8ejHl4
 unzip VOCdevkit.zip
 
 # install pytorch
