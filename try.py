@@ -23,17 +23,16 @@ pth = '/root/simple-faster-rcnn-pytorch/setup/VOCdevkit/VOC2007/JPEGImages/'
 
 for image_path in os.listdir(pth):
     img = read_image(os.path.join(pth, image_path))
-    img = t.from_numpy(img)
-    _bboxes, _labels, _scores = trainer.faster_rcnn.predict(img[None],visualize=True)
+    img_t = t.from_numpy(img)
+    _bboxes, _labels, _scores = trainer.faster_rcnn.predict(img_t[None],visualize=True)
     # img = np.transpose(img.numpy(), (1, 2, 0))
     boxes = _bboxes[0].astype(int)
     scores = _scores[0].astype(int)
-    img = cv2.imread(os.path.join(pth, image_path))
-
+    img = np.transpose(img, (1, 2, 0))
     for i in range(len(boxes)):
         box = boxes[i]
         # print(box); break
-        img = cv2.rectangle(np.float32(img), (box[1], box[0]), (box[3], box[2]), (255, 0, 0), 2)
+        img = cv2.rectangle(img, (box[1], box[0]), (box[3], box[2]), (255, 0, 0), 2)
     
     # img = np.transpose(img, (2, 0, 1))
     cv2.imwrite('test_res/{}'.format(image_path), img)
