@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
 
 
@@ -28,7 +27,7 @@ for image_path in os.listdir(pth):
     # img = np.transpose(img.numpy(), (1, 2, 0))
     boxes = _bboxes[0].astype(int)
     scores = _scores[0].astype(int)
-    img = np.transpose(img, (1, 2, 0))
+    img = cv2.cvtColor(np.transpose(img, (1, 2, 0)), cv2.COLOR_BGR2RGB)
     for i in range(len(boxes)):
         box = boxes[i]
         # print(box); break
